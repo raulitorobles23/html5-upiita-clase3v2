@@ -1,14 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Texto a numero</title>
-        <script>
-         /*Aquí todo el código en javaScript*/
+	<head>
+		<meta charset="UTF-8"/>
+		<title>JavaScript</title>
+		<script>
+			var nombreUsuario = prompt("¿Cómo te llamas?");
+			var apellidoUsuario = prompt("¿Cúal es tu Apellido?");
+			var edadUsuario = prompt("¿Cúal es tu Edad?");
+var persona = new Object();
+			persona.nombre = nombreUsuario; /*Son atributos del objeto persona*/
+			persona.apellido = apellidoUsuario;
+			persona.edad = edadUsuario;
+			persona.presentarse = function() {
+				alert("Soy " + persona.nombre + " " + persona.apellido +" y tengo " + persona.edad +" años");
+			};
+			persona.presentarse();
+		</script>
+	</head>
+	<body>
 
-        </script>
-    </head>
-    <body>
-
-    </body>
+	</body>
 </html>

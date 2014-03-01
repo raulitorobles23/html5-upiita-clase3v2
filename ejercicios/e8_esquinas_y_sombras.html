@@ -3,66 +3,98 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Ejercicio 8</title>
-		
+
 		<style type="text/css">
 			body {
 				background-color: #7673d9;
 			}
-			
-			#titulo{
+
+			#titulo {
 				color: #61b7cf;
+				text-shadow: 0px 0px 3px white;
+				-moz-text-shadow: 0px 0px 3px white; /*firefox*/
+				-webkit-text-shadow: 0px 0px 3px white; /*chrome*/
+				-o-text-shadow: 0px 0px 3px white; /*opera*/
+				-ms-text-shadow: 0px 0px 3px white; /*ie+8*/
 			}
-			
-			#caja-contenido{
+			#pie-pagina, #segundoparrafo {
+				border-radius: 20px; /*puedo dar un valor para cada una de las cuatro esquinas*/
+				-moz-border-radius: 20px; /*firefox*/
+				-webkit-border-radius: 20px; /*chrome*/
+				-o-border-radius: 20px; /*opera*/
+				-ms-border-radius: 20px; /*ie+8*/
+			}
+			#primerparrafo,#tercerparrafo{
+				border-radius: 15px 15px 0px 0px; /*puedo dar un valor para cada una de las cuatro esquinas*/
+				-moz-border-radius: 15px 15px 0px 0px; /*firefox*/
+				-webkit-border-radius: 15px 15px 0px 0px; /*chrome*/
+				-o-border-radius: 15px 15px 0px 0px; /*opera*/
+				-ms-border-radius: 15px 15px 0px 0px; /*ie+8*/
+			}
+			#primerparrafo,#segundoparrafo,#tercerparrafo{
+				padding: 20px;
+				margin: 30px;
+				text-align:justify;
+				margin-right:auto;
+				margin-left:auto;
+				
+			}
+
+			#caja-contenido {
 				background-color: #8D3656;
 				padding: 20px;
 				margin: 30px;
 			}
 
-			.caja-presentacion1, .caja-presentacion2,
-			.caja-presentacion3 {
+			.caja-presentacion1, .caja-presentacion2, .caja-presentacion3 {
 				color: #5c0dac;
-				background-color:#ECF6CB;
+				background-color: #ECF6CB;
 				width: 400px;
+				box-shadow: 0px 0px 20px gray;
+				-moz-box-shadow: 0px 0px 20px gray; /*firefox*/
+				-webkit-box-shadow: 0px 0px 20px gray; /*chrome*/
+				-o-box-shadow: 0px 0px 20px gray; /*opera*/
+				-ms-box-shadow: 0px 0px 20px gray; /*ie+8*/
 			}
-			
-			#pie-pagina{
+
+			#pie-pagina {
 				background-color: #5ec4cd;
 				color: #015c65;
+				text-align:center;
 			}
 
 		</style>
 	</head>
 	<body>
-			<div id="caja-contenido">
-			
+		<div id="caja-contenido">
+
 			<h1 id="titulo"> Lenguaje de Programación</h1>
-			
-			<p class="caja-presentacion1">
-				Un lenguaje de programación es un lenguaje formal diseñado para expresar procesos 
+
+			<p class="caja-presentacion1" id="primerparrafo">
+				Un lenguaje de programación es un lenguaje formal diseñado para expresar procesos
 				que pueden ser llevados a cabo por máquinas como las computadoras.
-				Pueden usarse para crear programas que controlen el comportamiento físico y lógico 
+				Pueden usarse para crear programas que controlen el comportamiento físico y lógico
 				de una máquina, para expresar algoritmos con precisión, o como modo de comunicación humana
-				Está formado por un conjunto de símbolos y reglas sintácticas y semánticas 
+				Está formado por un conjunto de símbolos y reglas sintácticas y semánticas
 				que definen su estructura y el significado de sus elementos y expresiones.
-				Al proceso por el cual se escribe, se prueba, se depura, se compila (de ser necesario) 
+				Al proceso por el cual se escribe, se prueba, se depura, se compila (de ser necesario)
 				y se mantiene el código fuente de un programa informático se le llama programación.
 			</p>
-			<p class="caja-presentacion2">
-				Existe un error común que trata por sinónimos los términos 'lenguaje de programación' 
+			<p class="caja-presentacion2" id="segundoparrafo">
+				Existe un error común que trata por sinónimos los términos 'lenguaje de programación'
 				y 'lenguaje informático'. Los lenguajes informáticos engloban a los lenguajes de programación
-				y a otros más, como por ejemplo HTML (lenguaje para el marcado de páginas web 
-				que no es propiamente un lenguaje de programación, sino un conjunto de instrucciones 
+				y a otros más, como por ejemplo HTML (lenguaje para el marcado de páginas web
+				que no es propiamente un lenguaje de programación, sino un conjunto de instrucciones
 				que permiten diseñar el contenido de los documentos).
 			</p>
-			<p class="caja-presentacion3">
-				Para que la computadora entienda nuestras instrucciones debe usarse un lenguaje específico 
-				conocido como código máquina, el cual la máquina comprende fácilmente, pero que lo hace 
+			<p class="caja-presentacion3" id="tercerparrafo">
+				Para que la computadora entienda nuestras instrucciones debe usarse un lenguaje específico
+				conocido como código máquina, el cual la máquina comprende fácilmente, pero que lo hace
 				excesivamente complicado para las personas. De hecho sólo consiste en cadenas extensas de números 0 y 1.
-                Para facilitar el trabajo, los primeros operadores de computadoras decidieron hacer un traductor 
-                para reemplazar los 0 y 1 por palabras o abstracción de palabras y letras provenientes del inglés; 
-                éste se conoce como lenguaje ensamblador. El ensamblador sigue la misma estructura del lenguaje máquina, 
-                pero las letras y palabras son más fáciles de recordar y entender que los números.
+				Para facilitar el trabajo, los primeros operadores de computadoras decidieron hacer un traductor
+				para reemplazar los 0 y 1 por palabras o abstracción de palabras y letras provenientes del inglés;
+				éste se conoce como lenguaje ensamblador. El ensamblador sigue la misma estructura del lenguaje máquina,
+				pero las letras y palabras son más fáciles de recordar y entender que los números.
 			</p>
 
 			<p id="pie-pagina">
